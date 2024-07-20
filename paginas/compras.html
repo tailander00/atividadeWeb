@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/atividadeWeb/style.css">
+    <title>Cadastro de compras</title>
+</head>
+<body>
+    <div class="cabecalho">
+        <a href="/atividadeWeb/"><h1>e-comerce</h1></a>
+        <a href="/atividadeWeb/paginas/produtos.html">produtos</a>
+        <a href="/atividadeWeb/paginas/enderecos.html">enderecos</a>
+        <a href="/atividadeWeb/paginas/compras.html">compras</a><br>
+    </div>
+    
+    <h2>Compras</h2>
+
+    <form method="post">
+        <label for="endereco">Endereco</label>
+        <select id="endereco" class="endereco">
+            <option value="">Selecione</option>
+        </select><br>
+        <label for="data">Data da compra:</label>
+        <input type="date" id="data"><br>
+        <button onclick="cadastraCompra()">enviar</button>
+    </form>
+    
+    
+    <div>
+        <table id="tabela">
+            <tr>
+                <th>id</th>
+                <th>Endereco</th>
+                <th>Data</th>
+                <th>alterar</th>
+                <th>deletar</th>
+            </tr>
+        </table>
+    </div>
+    <script src="/atividadeWeb/scripts/compras.js"></script>
+</body>
+</html>

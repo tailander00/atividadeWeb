@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/atividadeWeb/style.css">
+    <title>Cadastro de produtos</title>
+</head>
+<body> 
+    <div class="cabecalho">
+        <a href="/atividadeWeb/"><h1>e-comerce</h1></a>
+        <a href="/atividadeWeb/paginas/produtos.html">produtos</a>
+        <a href="/atividadeWeb/paginas/enderecos.html">enderecos</a>
+        <a href="/atividadeWeb/paginas/compras.html">compras</a><br>
+    </div>
+
+    <h2>Produtos</h2>
+
+    <form method="post">
+        <label>Descricao do produto</label>
+        <input type="text" id="descricao"><br>
+        <label>valor unitario:</label>
+        <input type="text" id="valor_unitario">
+        <button onclick="cadastraProdutos()">enviar</button>
+    </form> 
+    
+    <div>
+        <table id="tabela">
+            <tr>
+                <th>id</th>
+                <th>Produto</th>
+                <th>Preco</th>
+                <th>alterar</th>
+                <th>deletar</th>
+            </tr>
+        </table>
+    </div>
+    <script src="/atividadeWeb/scripts/produtos.js"></script>
+</body>
+</html>

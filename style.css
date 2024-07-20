@@ -1,0 +1,58 @@
+body{
+    background-color: cadetblue;
+}
+
+h1{
+  margin: 5px;
+}
+
+h2{
+  margin-left: 5px;
+}
+
+a{
+  background-color: cadetblue;
+  color: black;
+  font-size: large;
+  text-decoration: none;
+
+  border-radius: 5px;
+  padding: 10px;
+  margin: 5px;
+}
+
+a:hover{
+  background-color: rgb(82, 135, 138);
+  margin-top: 3px;
+  margin-bottom: 7px;
+}
+
+form{
+  margin: 5px;
+}
+
+.cabecalho{
+  background-color: darkcyan;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+table {
+    border-collapse: collapse;
+    width: 80%;
+    font-family: Arial, sans-serif;
+  }
+  
+
+  th {
+    background-color: #f2f2f2;
+    text-align: left;
+    padding: 5px;
+    border: 1px solid #999999;
+  }
+
+  tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/atividadeWeb/style.css">
+    <title>Cadastro de endereco</title>
+</head>
+<body>
+    
+    <div class="cabecalho">
+        <a href="/atividadeWeb/"><h1>e-comerce</h1></a>
+        <a href="/atividadeWeb/paginas/produtos.html">produtos</a>
+        <a href="/atividadeWeb/paginas/enderecos.html">enderecos</a>
+        <a href="/atividadeWeb/paginas/compras.html">compras</a><br>
+    </div>
+
+    <h2>Enderecos</h2>
+
+    <form method="post">
+        <label for="estados">Estado:</label>
+        <select name="estado_id" id="estados" onclick="carregarEstados()" onchange="carregarCidades();defineEstado();">
+            <option value="">Selecione:</option>
+        </select><br>
+
+        <input type="hidden" name="estado" id="estado_aux" value="">
+        <input type="hidden" name="sigla" id="sigla" value="">
+
+        <label for="cidades">Cidade:</label>
+        <select name="cidade" id="cidades">
+            <option value="">Selecione:</option>
+        </select><br>
+
+        <label for="rua">Rua:</label>
+        <input type="text" id="rua"><br>
+        <label for="numero">Numero:</label>
+        <input type="text" id="numero"><br>
+        <label for="bairro">Bairro:</label>
+        <input type="text" id="bairro"><br>
+        <label for="telefone">Telefone:</label>
+        <input type="text" id="telefone"><br>
+        <button onclick="cadastraEnderecos()">enviar</button>
+    </form>
+
+    <table id="tabela">
+        <tr>
+            <th>id</th>
+            <th>Estado</th>
+            <th>Cidade</th>
+            <th>Rua</th>
+            <th>Numero</th>
+            <th>Bairro</th>
+            <th>Telefone</th>
+            <th>alterar</th>
+            <th>deletar</th>
+        </tr>
+    </table>
+
+    <script src="/atividadeWeb/scripts/ibge.js"></script>
+    <script src="/atividadeWeb/scripts/enderecos.js"></script>
+</body>
+</html>
